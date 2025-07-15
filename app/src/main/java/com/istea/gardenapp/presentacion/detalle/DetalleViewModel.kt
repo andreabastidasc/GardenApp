@@ -34,7 +34,7 @@ class DetalleViewModel(
         viewModelScope.launch {
             try {
                 val planta = repositorio.getCuidados(plantaId = plantaId)
-                uiState = DetalleEstado.Resultado(cuidado = repositorio.cuidadoLirio)
+                uiState = DetalleEstado.Resultado(cuidado = planta)
             } catch (e: Exception) {
                 uiState = DetalleEstado.Error(mensaje = "Error al cargar el contenido")
             }
