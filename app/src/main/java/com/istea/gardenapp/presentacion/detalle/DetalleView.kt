@@ -175,7 +175,7 @@ fun PrediccionView(titulo:String, descripcion: String){
                 modifier = Modifier
                     .fillMaxWidth(),
                 style = MaterialTheme.typography.bodyMedium,
-                text = "aca deberia haber un texto no harcodeado"
+                text = descripcion
             )
         }
     }
